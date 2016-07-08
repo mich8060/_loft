@@ -10,7 +10,7 @@
         </div>		
         <div class="row">
             <div class="col-lg-12">
-				<div class="gap10"></div>
+				<div class="spc-in-10"></div>
 				<hr class="sm" />
 			</div>
         </div>

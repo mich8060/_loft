@@ -1,30 +1,68 @@
 <header>
-    <div class="container">
-		<a href="home" class="branding">
-        	the<span>Wilds</span>
-			<div class="branding-provider">By </div>
-        </a>
-		<nav>
-		    <ul>
-		        <li class="selected"><a href="#" class="primary">Women</a></li>
-		        <li><a href="#" class="primary">Men</a></li>
-		        <li><a href="#" class="primary">Kids</a></li>
-		        <li><a href="#" class="primary">Brands</a></li>
-				<li><a href="#" class="primary">New</a></li>
-		        <li><a href="#" class="primary">Activities</a></li>
-		        <li><a href="#" class="primary"><span style="text-transform:lowercase;">the</span>Fix</a></li>
-		    </ul>
-		</nav>
-        <search>
-            <span class="wilds-icons" type="magnifier"></span>
-        </search>
-        <utilities>
-            <a href="#">Chat</a>
-            <a href="#" class="account">My Account</a>
-            <a href="#">Cart(2)</a>
-        </utilities>
-		<div class="clear"></div>
-    </div>
+	<div class="global">Free 2-Day Shipping on Orders Over*<span> – Limited Time Only</span></div>
+	<div class="container">
+		<div class="row">
+			<div class="iconography">
+				<span class="icons" type="cart"></span>
+				<span class="icons" type="menu"></span>
+		    	<span class="icons" type="search"></span>
+			</div>
+			<steal>
+				<a href="#">
+					<div class="steal-branding">theFIX</div>
+					<img src="http://content.backcountry.com/images/items/large/PAT/PAT00EP/FEAGRE.jpg" alt="" />
+					<div class="steal">
+						<div class="steal-brand">Patagonia</div>
+						<div class="steal-title">Nano-Air Insulated Jacket - Men's</div>
+					</div>
+				</a>
+			</steal>
+			<utilities>
+		        <a href="#">Help?</a>
+		        <a href="#" class="account">My Account</a>
+		        <a href="#"><span>2</span>Cart</a>
+				<search>
+					<input type="search" placeholder="Search" />
+		            <span class="icons" type="search"></span>
+		        </search>
+		    </utilities>
+			<a href="home" class="branding">
+				<div>Backcountry</div>
+				<span class="branding-1">L</span>
+				<span class="branding-2">O</span>
+				<span class="branding-3">F</span>
+				<span class="branding-4">T</span>
+		    </a>
+		</div>
+	</div>
+	<nav>
+	    <ul>
+	        <li>
+				<a href="#" class="primary">Women</a>
+	            <dropdown template="women"></dropdown>
+			</li>
+	        <li>
+				<a href="#" class="primary">Men</a>
+	            <dropdown template="men"></dropdown>
+			</li>
+	        <li>
+				<a href="#" class="primary">Girls</a>
+	            <dropdown template="women"></dropdown>
+			</li>
+			<li>
+				<a href="#" class="primary">Boys</a>
+	            <dropdown template="men"></dropdown>
+			</li>
+			<li>
+				<a href="#" class="primary">Activities</a>
+	            <dropdown template="activities"></dropdown>
+			</li>
+	      	<li>
+				<a href="#" class="primary">Events</a>
+	            <dropdown template="collections"></dropdown>
+			</li>
+	    </ul>
+	</nav>
 </header>
 <events>
 	<div class="container">

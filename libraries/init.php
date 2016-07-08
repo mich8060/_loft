@@ -56,10 +56,19 @@
         foreach($header as $h){
             $head = $template->header($h);
 
-
 			if($h->attr['globaltext'] == "true"){
 				$head .= $template->globaltext();
 			}
+			
+			
+            $nav = str_get_html($head);
+            if($nav->find('dropdown')){
+                $dropdown = $nav->find('dropdown');
+                foreach($dropdown as $d){
+                    $d->outertext = $template->dropdown($d);
+                }
+				$head = $nav;
+            }
 
 			$h->outertext = $head;
 			$html = $html;

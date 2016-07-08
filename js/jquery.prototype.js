@@ -12,6 +12,13 @@ $(document).ready(function(){
 			});
 		});   
 	}
-
+	
+	var hash = window.location.hash;
+	
+	if(hash == '#ads'){
+		$('.adsense').show();
+	}else{
+		$('.extras').show();
+	}
 
 });

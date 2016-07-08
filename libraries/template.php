@@ -255,9 +255,9 @@ class Template {
                     "title"         => $json->products[0]->title,
                     "image"         => 'http://content.backcountry.com'.$json->products[0]->skus[0]->image->url,
                     "reviews"       => $json->products[0]->customerReviews->average,
-                    "listPrice"     => '$'.$json->metadata->productSummary->$sku->listPrice->max,
-                    "salePrice"     => '$'.$json->metadata->productSummary->$sku->salePrice->min,
-                    "discount"      => $json->metadata->productSummary->$sku->discountPercent->max.'% off',
+	                "listPrice"     => '$'.round($json->metadata->productSummary->$sku->listPrice->max),
+	                "salePrice"     => '$'.round($json->metadata->productSummary->$sku->salePrice->min),
+                    "discount"      => $json->metadata->productSummary->$sku->discountPercent->max,
                     "exclusives"    => '',
                 );
                 fwrite($file,json_encode($data));
@@ -274,9 +274,9 @@ class Template {
                 "title"         => $json->products[0]->title,
                 "image"         => 'http://content.backcountry.com'.$json->products[0]->skus[0]->image->url,
                 "reviews"       => $json->products[0]->customerReviews->average,
-                "listPrice"     => '$'.$json->metadata->productSummary->$sku->listPrice->max,
-                "salePrice"     => '$'.$json->metadata->productSummary->$sku->salePrice->min,
-                "discount"      => $json->metadata->productSummary->$sku->discountPercent->max.'% off',
+                "listPrice"     => '$'.round($json->metadata->productSummary->$sku->listPrice->max),
+                "salePrice"     => '$'.round($json->metadata->productSummary->$sku->salePrice->min),
+                "discount"      => $json->metadata->productSummary->$sku->discountPercent->max,
                 "exclusives"    => '',
             );
         }
